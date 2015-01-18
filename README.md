@@ -2,4 +2,11 @@
 Template to create a Dropwizard project that contains:
 
 * REST Api
-* Webapplication that consumes the REST Api using Angularjs, Bootstrap, font-awesome and underscore.
+* Web Aapplication that consumes the REST Api 
+* [Angularjs](https://angularjs.org/)
+* [Bootstrap](http://getbootstrap.com/)
+* [Font awesome](http://fortawesome.github.io/Font-Awesome/)
+* [Underscore](http://underscorejs.org/)
+
+
+
