@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="en" ng-app="checkpointApp">
+<html lang="en" ng-app="dropangularApp">
 <head>
   <meta charset="utf-8">
-  <title>CheckPoint</title>
+  <title>DropAngular</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/dropangular.css">
   <script src="assets/angularjs/angular.min.js"></script>
   <script src="assets/ext-libs/underscore-min.js"></script>
-<script src="assets/jquery/jquery-1.11.2.min.js"></script>
+  <script src="assets/jquery/jquery-1.11.2.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/controllers.js"></script>
 </head>
@@ -23,6 +23,17 @@
     </div>
   </div>
 </nav>
+
+<h3>List of Pings</h3>
+<ul>
+    <li class="ping" ng-repeat="ping in pings">{{ping.id}} - {{ping.created}} - {{ping.remote_ip}}</li>
+</ul>
+
+<h3>Ping me!</h3>
+<form action="api/ping" method="post">
+    <input type="submit" value="Ping!">
+</form>
+
 
 
 </body>

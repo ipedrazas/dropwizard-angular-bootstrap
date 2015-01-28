@@ -67,3 +67,29 @@ Now you can run your app by executing the Dropwizard command:
 
         java -jar  target/dropangular-0.0.1-SNAPSHOT.jar server configuration.yml
 
+Once the application is running, you can go to [localhost](http://localhost:8080) and you should see the DropAngular application.
+
+If you press the button, you will be creating a ping object, saving it in your postgres and returning a beautiful JSON like this:
+
+        {
+            timestampAsString: "28-01-2015 23:29:40",
+            id: 5,
+            remote_ip: "127.0.0.1",
+            timestamp: 1422487780765
+        }
+
+Note that the attributes are the names specified by `JsonProperty`
+
+        @Column(name = "ping_tstamp", nullable = false)
+        @JsonProperty("timestamp")
+        private Long timeStamp;
+
+Note as well that the JSON contains `timestampAsString` which comes from our
+
+        public String getTimestampAsString(){
+            DateTime jodaTime = new DateTime(this.timeStamp,DateTimeZone.forTimeZone(TimeZone.getTimeZone("EU/London")));
+            DateTimeFormatter parser = DateTimeFormat.forPattern("dd-MM-yyyy HH:mm:ss");
+            return parser.print(jodaTime);
+        }
+
+Finally, note that the Date showed in the web app is the one formatted with Javascript. Yes, I did it on purpose so you can have different ways of managing your dates.

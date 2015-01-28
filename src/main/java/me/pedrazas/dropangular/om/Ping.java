@@ -30,6 +30,7 @@ public class Ping {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@JsonProperty("id")
     private long id;
 	
 
