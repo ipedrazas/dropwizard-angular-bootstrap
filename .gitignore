@@ -17,3 +17,4 @@ target/
 .settings
 .classpath
 .project
+dependency-reduced-pom.xml

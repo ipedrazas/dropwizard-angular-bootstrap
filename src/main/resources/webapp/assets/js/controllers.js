@@ -17,7 +17,7 @@ Date.prototype.dateTime = function() {
 
 
 
-dropangularApp.controller('CheckPointList', function($scope, $http){
+dropangularApp.controller('DropAngularHome', function($scope, $http){
 
             $http.get('/api/ping').success(function(data) {
                     var nodes = new Array();
