@@ -1,0 +1,40 @@
+
+.wrapper{
+    padding: 40px;
+}
+
+.serverEntryList{
+    list-style: none;
+}
+
+small {
+    font-size: 75%;
+}
+
+.tabHeader{
+    font-size: 1.4em;
+    padding-left: 45px;
+    font-weight: bold;
+
+}
+
+.tabImage{
+    vertical-align: bottom;
+}
+
+.running{
+    color: green;
+}
+
+.stopped{
+    color: red;
+}
+.details{
+    padding-left: 45px;
+    padding-bottom: 10px;
+}
+.searchCtrl{
+    width: 270px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
