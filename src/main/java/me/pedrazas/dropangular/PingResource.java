@@ -18,7 +18,7 @@ import me.pedrazas.dropangular.om.Ping;
 import com.codahale.metrics.annotation.Timed;
 
 
-@Path("/checkpoint")
+@Path("/ping")
 @Produces(MediaType.APPLICATION_JSON)
 public class PingResource {
 	
