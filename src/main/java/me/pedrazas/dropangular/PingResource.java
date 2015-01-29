@@ -31,14 +31,14 @@ public class PingResource {
 
 	@GET
 	@UnitOfWork
-	public List<Ping> listCheckPoints() {
+	public List<Ping> listPings() {
 		return dao.findAll();
 	}
 	
 	@POST
 	@Timed
 	@UnitOfWork
-	public Response startUp(@Context HttpServletRequest request) {
+	public Response createPing(@Context HttpServletRequest request) {
 		Ping ping = new Ping(getClientIpAddr(request));
 		try {			
 			dao.create(ping);
