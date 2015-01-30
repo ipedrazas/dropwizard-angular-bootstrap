@@ -1,19 +1,22 @@
 # DropAngular: a dropwizard / angular / bootstrap example
 
-Template to create a Dropwizard project that contains:
+Template to create an Angular.js application that consumes a REST API based on Dropwizard that uses Postgres as a database.
 
-* REST Api
-* Web Aapplication that consumes the REST Api
-* [Angularjs](https://angularjs.org/)
-* [Bootstrap](http://getbootstrap.com/)
-* [Font awesome](http://fortawesome.github.io/Font-Awesome/)
-* [Underscore](http://underscorejs.org/)
+* Angular.js Web Application
+* REST Api based on DropWizard
 
+## Frontend
 
+The project uses the following frameworks:
 
-## Running DropAngular
+* [AngularJS v1.3.9](https://angularjs.org/)
+* [Bootstrap v3.3.2](http://getbootstrap.com/)
+* [Font awesome v4.3.0](http://fortawesome.github.io/Font-Awesome/)
+* [Underscore v1.7.0](http://underscorejs.org/)
 
-We run Postgres in Docker
+## Backend
+
+The database is PostgreSQL (that runs in Docker) but it can be easily changed to any other.
 
 To create your database container execute this command:
 
@@ -30,6 +33,9 @@ Once you're in `PSQL` you just have to create the Database:
 You can verify that the database has been created successfully by typing:
 
         postgres=# \list
+
+The result should be something similar to this:
+
                                   List of databases
             Name     |  Owner   | Encoding |  Collate   |   Ctype    |   Access privileges
         -------------+----------+----------+------------+------------+-----------------------
