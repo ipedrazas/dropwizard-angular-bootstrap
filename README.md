@@ -11,6 +11,7 @@ The project uses the following frameworks:
 
 * [AngularJS v1.3.9](https://angularjs.org/)
 * [Bootstrap v3.3.2](http://getbootstrap.com/)
+* [Jquery v1.11.2](http://jquery.com/)
 * [Font awesome v4.3.0](http://fortawesome.github.io/Font-Awesome/)
 * [Underscore v1.7.0](http://underscorejs.org/)
 
