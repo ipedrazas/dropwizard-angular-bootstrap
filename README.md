@@ -5,6 +5,15 @@ Template to create an Angular.js application that consumes a REST API based on D
 * Angular.js Web Application
 * REST Api based on DropWizard
 
+# Running The app
+
+There are two ways of running the application:
+
+* Frontend in a web server + standalone backend
+* Standalone application
+
+The API has CORS enabled, so you can run them separated. Just remember to update the url of the Javascripts.
+
 ## Frontend
 
 The project uses the following frameworks:
