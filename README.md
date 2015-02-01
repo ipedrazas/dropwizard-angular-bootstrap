@@ -64,9 +64,12 @@ Compile your DropAngular app:
 
         mvn package
 
+
 Now you have to initialise the database. To do so, we use the `db migrate` command:
 
     java -jar  target/dropangular-0.0.1-SNAPSHOT.jar db migrate configuration.yml
+
+Remember that your `migrations.xml` ins inside the jar file, so, if you modify it, remember to do `mvn package` again.
 
 We should see something like this:
 
