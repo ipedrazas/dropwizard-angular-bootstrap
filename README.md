@@ -1,6 +1,6 @@
 # DropAngular: a dropwizard / angular / bootstrap example
 
-build:
+[![Build Status](http://drone.ipedrazas.k8s.co.uk/api/badge/github.com/ipedrazas/dropwizard-angular-bootstrap/status.svg?branch=master)](http://drone.ipedrazas.k8s.co.uk/github.com/ipedrazas/dropwizard-angular-bootstrap)
 
 Template to create an Angular.js application that consumes a REST API based on Dropwizard that uses Postgres as a database.
 
