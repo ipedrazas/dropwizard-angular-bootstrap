@@ -1,5 +1,7 @@
 # DropAngular: a dropwizard / angular / bootstrap example
 
+build:
+
 Template to create an Angular.js application that consumes a REST API based on Dropwizard that uses Postgres as a database.
 
 * Angular.js Web Application
