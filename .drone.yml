@@ -2,4 +2,4 @@ image: oraclejdk8
 
 script:
   - mvn clean
-  - mvn build
+  - mvn install
