@@ -11,6 +11,8 @@ import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import me.pedrazas.dropangular.om.Ping;
 
+import java.util.EnumSet;
+
 import org.eclipse.jetty.servlets.CrossOriginFilter;
 import javax.servlet.DispatcherType;
 import javax.servlet.FilterRegistration.Dynamic;
