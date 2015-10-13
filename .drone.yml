@@ -3,3 +3,4 @@ image: oraclejdk8
 script:
   - mvn clean
   - mvn install
+  - echo $pwd
