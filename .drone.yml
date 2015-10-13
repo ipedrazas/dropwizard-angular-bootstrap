@@ -6,9 +6,5 @@ script:
   
 publish:
   docker:
-    username: myuser
-    password: mypassword
-    email: foobar@mail.com
-    repo: foo/bar
-    tag: latest
-    file: Dockerfile
+    docker_host: tcp://127.0.0.1:2375
+    image_name: dropangular
