@@ -1,4 +1,4 @@
-image: oraclejdk8
+image: java:8
 
 script:
   - mvn clean
