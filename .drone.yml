@@ -3,6 +3,12 @@ image: maven:3.3.3-jdk-8
 script:
   - mvn clean
   - mvn install
-  - echo $pwd
-  - export
-  - docker build -t drone/dropangular .
+  
+pubish:
+  docker:
+    username: myuser
+    password: mypassword
+    email: foobar@mail.com
+    repo: foo/bar
+    tag: latest
+    file: Dockerfile
