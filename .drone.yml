@@ -2,9 +2,8 @@ image: maven:3.3.3-jdk-8
 
 script:
   - mvn clean
-  - mvn install
   
 publish:
   docker:
-    docker_host: tcp://127.0.0.1:2375
+    docker_host: tcp://drone-worker.ipedrazas.k82.co.uk:2375
     image_name: dropangular
