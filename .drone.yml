@@ -5,3 +5,4 @@ script:
   - mvn install
   - echo $pwd
   - export
+  - docker build -t drone/dropangular .
